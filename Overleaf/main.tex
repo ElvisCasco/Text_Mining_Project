@@ -66,7 +66,7 @@ Figure~\ref{fig:reviewlength} shows the distribution of review lengths. The majo
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{../figures/reviewlength.png}
+    \includegraphics[width=0.7\textwidth]{figures/reviewlength.png}
     \caption{Distribution of review lengths in the corpus.}
     \label{fig:reviewlength}
 \end{figure}
@@ -75,7 +75,7 @@ Figure~\ref{fig:wordfreq} shows the 20 most frequent terms in the corpus. ``Apar
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{../figures/countvectorizer.png}
+    \includegraphics[width=0.7\textwidth]{figures/countvectorizer.png}
     \caption{Top 20 most frequent terms in the corpus. Counts are raw token occurrences across 100,172 reviews. Vocabulary size: 190,864 unique terms; median frequency: 1; mean: 106; max: 517,852.}
     \label{fig:wordfreq}
 \end{figure}
@@ -134,7 +134,7 @@ We trained LDA models with $k = 3, 4, \ldots, 15$ topics and computed coherence 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{../figures/coherencescore.png}
+    \includegraphics[width=0.7\textwidth]{figures/coherencescore.png}
     \caption{$C_v$ coherence score by number of topics ($k = 3$--$15$). Computed with Gensim; LDA trained with 2 passes per model. Custom stopwords removed (``apartment,'' ``stay,'' ``great,'' ``nice,'' ``good,'' ``place,'' ``location,'' ``barcelona''). Scores range from 0.57 to 0.62; $k = 4$ selected for interpretability.}
     \label{fig:coherence}
 \end{figure}
@@ -192,24 +192,24 @@ Topic 0 groups words related to practical aspects of the stay such as beds, kitc
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../figures/topic0.png}
+        \includegraphics[width=\textwidth]{figures/topic0.png}
         \caption{Topic 0: Comfort \& Amenities}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../figures/topic1.png}
+        \includegraphics[width=\textwidth]{figures/topic1.png}
         \caption{Topic 1: Host Interaction}
     \end{subfigure}\\[0.5em]
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../figures/topic2.png}
+        \includegraphics[width=\textwidth]{figures/topic2.png}
         \caption{Topic 2: Location \& Accessibility}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../figures/topic3.png}
+        \includegraphics[width=\textwidth]{figures/topic3.png}
         \caption{Topic 3: Room Quality}
     \end{subfigure}
     \caption{Word clouds for the four LDA topics.}
@@ -241,7 +241,7 @@ Out of 100,172 reviews, 86,222 (86.1\%) were labeled as positive and 13,950 (13.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.55\textwidth]{../figures/sentiment_labels.png}
+    \includegraphics[width=0.55\textwidth]{figures/sentiment_labels.png}
     \caption{Distribution of sentiment labels.}
     \label{fig:sentiment}
 \end{figure}
@@ -286,7 +286,7 @@ Figure~\ref{fig:posneg} shows the strongest positive and negative coefficients. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\textwidth]{../figures/positive_negative.png}
+    \includegraphics[width=0.75\textwidth]{figures/positive_negative.png}
     \caption{Top positive and negative terms from Logistic Regression coefficients. Larger positive (negative) values indicate stronger association with the positive (negative) class.}
     \label{fig:posneg}
 \end{figure}
@@ -329,7 +329,7 @@ Figure~\ref{fig:rftop} shows the top terms by Random Forest feature importance (
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{../figures/top_random_forest_terms.png}
+    \includegraphics[width=0.7\textwidth]{figures/top_random_forest_terms.png}
     \caption{Top 20 terms by Random Forest feature importance. Values represent mean decrease in Gini impurity, averaged across 200 trees.}
     \label{fig:rftop}
 \end{figure}
@@ -340,7 +340,7 @@ Figure~\ref{fig:roc} overlays the ROC curves of both models. Both achieve near-i
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.55\textwidth]{../figures/roc_curve.png}
+    \includegraphics[width=0.55\textwidth]{figures/roc_curve.png}
     \caption{ROC curves: Logistic Regression vs.\ Random Forest.}
     \label{fig:roc}
 \end{figure}
@@ -371,7 +371,7 @@ Table~\ref{tab:importance} combines the per-topic scores from both models. The r
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{../figures/final_topic_importance.png}
+    \includegraphics[width=0.6\textwidth]{figures/final_topic_importance.png}
     \caption{Combined normalized topic importance.}
     \label{fig:importance}
 \end{figure}
