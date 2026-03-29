@@ -1,0 +1,39 @@
+Based on the dominant words in each topic, we can assign the following descriptive names:
+
+*   **Topic 0:** Check-in & Host Communication
+*   **Topic 1:** Living Spaces & Furniture
+*   **Topic 2:** Room Comfort & Noise Concerns
+*   **Topic 3:** Barcelona Local Attractions & Culture
+*   **Topic 4:** High Recommendation & Homely Feel
+*   **Topic 5:** Amenities with Views & Enjoyment
+*   **Topic 6:** Accessibility & Nearby Conveniences
+*   **Topic 7:** Positive Accommodation & Host Qualities
+*   **Topic 8:** Specific Facilities & Functionality
+*   **Topic 9:** Overall Quality: Nice, Clean, Spacious
+
+Running LDA with 10 topics...
+(This may take a few minutes...)
+
+✅ LDA model trained!
+
+=== LDA Topics (Top 10 words each) ===
+
+Topic 0: 0.041*"machine" + 0.031*"washing" + 0.024*"dryer" + 0.021*"washer" + 0.020*"appartement" + 0.013*"internet" + 0.013*"work" + 0.013*"clothe" + 0.012*"wife" + 0.012*"construction"
+
+Topic 1: 0.044*"metro" + 0.039*"walk" + 0.033*"close" + 0.031*"apartment" + 0.030*"restaurant" + 0.025*"minute" + 0.018*"station" + 0.017*"location" + 0.016*"great" + 0.015*"away"
+
+Topic 2: 0.078*"apartment" + 0.045*"locate" + 0.034*"recommend" + 0.031*"clean" + 0.028*"good" + 0.025*"accommodation" + 0.024*"stay" + 0.020*"pleasant" + 0.020*"quiet" + 0.019*"barcelona"
+
+Topic 3: 0.025*"feel" + 0.024*"terrace" + 0.020*"home" + 0.019*"stay" + 0.018*"apartment" + 0.017*"love" + 0.017*"like" + 0.016*"view" + 0.016*"beautiful" + 0.015*"barcelona"
+
+Topic 4: 0.026*"check" + 0.022*"give" + 0.020*"time" + 0.019*"host" + 0.018*"apartment" + 0.017*"stay" + 0.016*"barcelona" + 0.014*"meet" + 0.014*"help" + 0.013*"arrive"
+
+Topic 5: 0.075*"stay" + 0.075*"great" + 0.065*"place" + 0.050*"recommend" + 0.041*"location" + 0.038*"apartment" + 0.037*"barcelona" + 0.032*"host" + 0.027*"perfect" + 0.026*"definitely"
+
+Topic 6: 0.060*"monica" + 0.052*"julia" + 0.042*"child" + 0.036*"family" + 0.029*"adult" + 0.026*"kid" + 0.024*"value" + 0.018*"year" + 0.018*"attention" + 0.018*"high"
+
+Topic 7: 0.024*"room" + 0.019*"apartment" + 0.017*"bed" + 0.017*"bathroom" + 0.017*"bedroom" + 0.015*"small" + 0.013*"kitchen" + 0.013*"noise" + 0.011*"good" + 0.011*"air"
+
+Topic 8: 0.079*"location" + 0.075*"apartment" + 0.074*"great" + 0.052*"good" + 0.041*"clean" + 0.037*"host" + 0.036*"nice" + 0.027*"easy" + 0.023*"excellent" + 0.023*"comfortable"
+
+Topic 9: 0.061*"appartment" + 0.033*"doubt" + 0.025*"repeat" + 0.023*"comfort" + 0.019*"les" + 0.019*"la" + 0.017*"kindness" + 0.016*"magnificent" + 0.016*"unbeatable" + 0.012*"stunning"

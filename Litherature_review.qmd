@@ -1,0 +1,60 @@
+---
+title: "Literature Review: Text Mining and NLP for Airbnb Guest Reviews"
+format: pdf
+---
+
+# Literature Review
+
+## 1. The Airbnb Platform and Its Place in Academic Research
+
+Since its launch in 2008, Airbnb has become arguably the most studied platform in the sharing economy. The volume of academic work around it has grown rapidly over the past decade, covering everything from pricing strategies to social impacts and guest behavior \citep{davahli2023evolution}. For the purposes of this project, three strands of the literature are particularly relevant.
+
+The first relates to how Airbnb affects local housing and hotel markets. \citet{barron2021effect} showed that the expansion of home-sharing leads to higher rents and house prices, especially in areas where owner-occupancy is low. From the hotel industry's perspective, \citet{zervas2017rise} estimated that a 10\% rise in Airbnb supply could reduce hotel revenues by around 0.35\%, with budget hotels being hit hardest. These findings matter because they illustrate the economic stakes behind guest reviews --- reviews are not just feedback, they shape market dynamics.
+
+A second important strand deals with discrimination. In a well-known field experiment, \citet{edelman2017racial} found that guests with African American-sounding names were about 16\% less likely to have their booking requests accepted. This raised broader concerns about fairness in peer-to-peer platforms \citep[see also][]{edelman2015efficiencies}, although this is somewhat tangential to the text mining focus of this project.
+
+Third, there is a growing body of work connecting review sentiment to pricing outcomes. \citet{safari2025sentiment} classified the sentiment of reviews across six U.S. regions and found that more than 90\% of them are positive, and that what matters for host success is actually the polarity of reviews rather than how many reviews a listing has. Along similar lines, \citet{becerra2025reviews} showed that the sentiment expressed in reviews has a stronger effect on Airbnb prices than quantitative metrics like star ratings. \citet{perezsanchez2023sustainable} went further by building a price prediction model that combines machine learning with sentiment scores from review text.
+
+## 2. Sentiment Analysis in Hospitality and Tourism
+
+Sentiment analysis has been used extensively in tourism research to make sense of large volumes of review text. Among the most popular tools for this is VADER, a lexicon-based model designed for social media text that assigns polarity scores to sentences \citep{hutto2014vader}. It is particularly attractive because it does not require labeled training data and works reasonably well out of the box.
+
+One recurring issue in the Airbnb context is the so-called positivity bias: the overwhelming majority of reviews tend to be positive, which creates a skewed distribution. This is a problem for any classification model, since the negative class is severely underrepresented. Common strategies to deal with this include class weighting and oversampling techniques \citep{he2009learning}, both of which are used in practice across the literature.
+
+\citet{santos2022expressing} looked at Airbnb reviews in Fortaleza, Brazil, and identified the main themes driving satisfaction and dissatisfaction, while \citet{agarwal2024investigating} took a more technical approach, combining NLP with Random Forest and GIS to segment listings by review-based sentiment, specifically trying to get around the positivity bias in numerical scores. Outside of Airbnb, it is also worth mentioning the work of \citet{kaya2024analysing}, who compared Booking.com and Expedia using sentiment analysis and topic modeling --- they found, for instance, that Booking.com reviews focused more on ease of use while Expedia users complained more about cancellation and refund issues. This kind of cross-platform comparison is useful for understanding whether the patterns we observe in Airbnb reviews are platform-specific or more general.
+
+## 3. Preprocessing and Feature Extraction
+
+Before any analysis can be performed on review text, a series of preprocessing steps are needed to clean the data. These typically include lowercasing, removing punctuation and stopwords, and applying either stemming or lemmatization to reduce words to their base forms \citep{manning2008introduction}. In a multilingual setting like Barcelona, where reviews come in Spanish, Catalan, French, English, and several other languages, an additional step is needed: translating everything to a common language, usually English. While translation inevitably introduces some noise, neural machine translation tools like Google Translate have reached a quality level where this is generally acceptable for downstream NLP tasks.
+
+Once the text is clean, it needs to be converted into numerical features. TF-IDF (Term Frequency--Inverse Document Frequency) is still one of the most common representations for this purpose, despite being over fifty years old in concept \citep{sparckjones1972statistical, ramos2003using}. A useful extension is to include bigrams and trigrams in the vocabulary, which allows the model to capture multi-word expressions like ``check in,'' ``public transport,'' or ``well equipped'' --- phrases that carry important meaning in the Airbnb domain but would be lost if words were treated individually.
+
+## 4. Topic Modeling with LDA
+
+Latent Dirichlet Allocation, or LDA \citep{blei2003latent}, is probably the most widely used method for discovering topics in collections of documents in an unsupervised way. The basic idea is that each document is a mixture of topics, and each topic is characterized by a distribution over words. One of the main practical challenges with LDA is deciding how many topics to extract. There is no single correct answer here; coherence scores \citep{roder2015exploring} provide a quantitative guide, but ultimately the topics also need to make sense to a human reader.
+
+Several studies have applied LDA specifically to Airbnb reviews with interesting results. \citet{jang2020determinants} ran it on more than a million reviews from New York City and managed to extract 43 distinct topics, which they grouped into categories like location, unit characteristics, host quality, and general evaluations. Working with a smaller but still substantial dataset, \citet{chong2020comparative} compared reviews from Hong Kong (about 186,000) and Singapore (about 94,000), and found notable differences: 12 topics emerged for Hong Kong versus only 5 for Singapore, pointing to cross-cultural variation in what guests choose to write about. \citet{luo2022visual} proposed combining topic modeling with sentiment analysis to build a visual recommendation system for peer-to-peer accommodation.
+
+What these studies have in common is that the topics tend to revolve around a few recurring dimensions: the physical property and its amenities, the host and communication, the location and its accessibility, and the overall value for money. This consistency across different cities and datasets suggests that the method is capturing something real about what guests care about.
+
+## 5. Classifying Review Sentiment with Supervised Models
+
+While lexicon-based tools like VADER are useful for quick sentiment scoring, supervised machine learning models trained on labeled data tend to be more accurate when enough training examples are available. The use of TF-IDF features with classifiers like Logistic Regression and Random Forest is a well-tested combination in NLP \citep{pang2002thumbs, liu2012sentiment}.
+
+Logistic Regression is often the starting point because of its interpretability: the model coefficients tell you directly which words are most associated with positive or negative reviews, which can be very informative \citep{jurafsky2023speech}. Random Forest, on the other hand, can pick up on non-linear interactions between features and provides its own feature importance measure \citep{breiman2001random}. In practice, both models tend to perform reasonably well on review classification tasks, though Logistic Regression has the edge when it comes to understanding \textit{why} the model makes a particular prediction.
+
+Given the class imbalance problem mentioned earlier --- where positive reviews vastly outnumber negative ones --- it is important to use techniques like class weighting (e.g., setting \texttt{class\_weight="balanced"}) so that the model does not simply learn to predict ``positive'' for every review \citep{he2009learning}.
+
+## 6. Airbnb in Barcelona
+
+Barcelona is a particularly interesting case for studying Airbnb, and it has been used as a study site in a number of papers. With over 12 million international tourists visiting each year, the city faces intense pressure from short-term rentals, and this has made it one of the most regulated Airbnb markets in Europe. Recent text mining work on Airbnb data from Mediterranean cities, including Barcelona, has confirmed the richness and diversity of review content in these settings \citep{fernandezmorales2025mapping}.
+
+The social and political context is hard to ignore. \citet{cocolagant2016holiday} documented how the spread of tourist apartments in neighborhoods like Barceloneta and the Gothic Quarter pushed out long-term residents, contributing to a broader gentrification debate. \citet{garcialopez2020shortterm} provided econometric evidence that Airbnb activity in Barcelona has driven up both rents and property prices, with the strongest effects in the most tourist-heavy areas.
+
+On the regulatory side, Barcelona's city council launched PEUAT in 2017, a special urban plan that essentially froze the number of new short-term rental licenses in high-density zones \citep{ajuntament2017peuat}. However, enforcement has remained a challenge, and unlicensed listings continue to appear on the platform despite inspection efforts \citep{seguillinares2019monitoring}. This regulatory tension makes Barcelona an especially relevant setting for analyzing what guests and hosts discuss in reviews, as it may shape the kinds of experiences that are reported.
+
+The data for this project comes from Inside Airbnb \citep{cox2016airbnb}, an open data initiative that scrapes and publishes listing and review data for cities around the world, including Barcelona.
+
+\bibliographystyle{apalike}
+\bibliography{references}
+

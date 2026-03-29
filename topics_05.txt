@@ -1,0 +1,23 @@
+
+*   **Topic 0: Walkability & Distances** (walk, minute, 10, min, gothic, rambla, metro)
+*   **Topic 1: Apartment Facilities & Layout** (room, bed, bedroom, bathroom, kitchen)
+*   **Topic 2: Check-in Logistics & Host Interaction** (good, check, host, time, leave, arrive)
+*   **Topic 3: Neighborhood & Public Transport** (metro, close, restaurant, walk, area, station)
+*   **Topic 4: Overall Positive Experience & Recommendations** (great, stay, location, place, host, recommend)
+
+Running LDA with 5 topics...
+(Optimized for speed using LdaMulticore...)
+
+✅ LDA model trained!
+
+=== LDA Topics (Top 10 words each) ===
+
+Topic 0: 0.035*"walk" + 0.034*"minute" + 0.025*"10" + 0.023*"min" + 0.018*"20" + 0.017*"15" + 0.017*"gothic" + 0.015*"rambla" + 0.015*"ramblas" + 0.015*"metro"
+
+Topic 1: 0.026*"room" + 0.017*"bed" + 0.016*"bedroom" + 0.016*"bathroom" + 0.015*"kitchen" + 0.014*"location" + 0.014*"great" + 0.012*"small" + 0.012*"nice" + 0.010*"stay"
+
+Topic 2: 0.021*"good" + 0.016*"check" + 0.014*"host" + 0.011*"time" + 0.010*"clean" + 0.009*"leave" + 0.009*"arrive" + 0.009*"house" + 0.009*"accommodation" + 0.008*"stay"
+
+Topic 3: 0.036*"metro" + 0.028*"close" + 0.023*"restaurant" + 0.020*"walk" + 0.015*"area" + 0.014*"locate" + 0.014*"barcelona" + 0.014*"quiet" + 0.013*"station" + 0.012*"minute"
+
+Topic 4: 0.052*"great" + 0.048*"stay" + 0.037*"location" + 0.032*"place" + 0.030*"host" + 0.030*"recommend" + 0.025*"barcelona" + 0.020*"clean" + 0.018*"perfect" + 0.018*"nice"

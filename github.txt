@@ -1,0 +1,15 @@
+#git remote add origin https://github.com/ElvisCasco/Text_Mining_Project.git
+#git push -u origin main
+
+git lfs install
+git lfs track "reviews_translated.csv"
+git add .gitattributes
+git add -f reviews_translated.csv
+git commit -m "Track reviews_translated.csv with Git LFS"
+git push
+
+git lfs track "preprocessed_comments.csv"
+git add .gitattributes
+git add -f preprocessed_comments.csv
+git commit -m "Track preprocessed_comments.csv with Git LFS"
+git push

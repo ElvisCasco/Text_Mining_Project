@@ -1,0 +1,137 @@
+\begin{thebibliography}{}
+
+\bibitem[Agarwal and Chowdary, 2024]{agarwal2024investigating}
+Agarwal, S. and Chowdary, C.~R. (2024).
+\newblock Investigating the determinants of homestay satisfaction on {Airbnb}
+  using multiple techniques.
+\newblock {\em Scientific Reports}, 14:24062.
+
+\bibitem[{Ajuntament de Barcelona}, 2017]{ajuntament2017peuat}
+{Ajuntament de Barcelona} (2017).
+\newblock Pla especial urban\'{i}stic d'allotjaments tur\'{i}stics ({PEUAT}).
+\newblock Barcelona City Council.
+
+\bibitem[Becerra-Vicario et~al., 2025]{becerra2025reviews}
+Becerra-Vicario, R., Gonzalez-Rodrigo, E., and Munoz-Fernandez, G.~A. (2025).
+\newblock How do reviews impact {Airbnb}'s prices? {A} hedonic approach.
+\newblock {\em Tourism and Hospitality}, 6(4):181.
+
+\bibitem[Blei et~al., 2003]{blei2003latent}
+Blei, D.~M., Ng, A.~Y., and Jordan, M.~I. (2003).
+\newblock Latent {Dirichlet} allocation.
+\newblock {\em Journal of Machine Learning Research}, 3:993--1022.
+
+\bibitem[Breiman, 2001]{breiman2001random}
+Breiman, L. (2001).
+\newblock Random forests.
+\newblock {\em Machine Learning}, 45(1):5--32.
+
+\bibitem[Chong and Khoo-Lattimore, 2020]{chong2020comparative}
+Chong, K.~L. and Khoo-Lattimore, C. (2020).
+\newblock A comparative automated text analysis of {Airbnb} reviews in {Hong
+  Kong} and {Singapore} using {Latent Dirichlet Allocation}.
+\newblock {\em Sustainability}, 12(16):6673.
+
+\bibitem[Cox and Slee, 2016]{cox2016airbnb}
+Cox, M. and Slee, T. (2016).
+\newblock How {Airbnb}'s data hid the facts in {New York City}.
+\newblock Technical report, Inside Airbnb.
+
+\bibitem[Fernandez-Morales et~al., 2025]{fernandezmorales2025mapping}
+Fernandez-Morales, A., Mayorga-Toledano, M.~C., and Garrido-Almonacid, A.
+  (2025).
+\newblock Mapping visitors experiences---a case study on selected {Airbnb}
+  datasets in {Southern Europe}.
+\newblock {\em Sustainability}, 17(7):3105.
+
+\bibitem[He and Garcia, 2009]{he2009learning}
+He, H. and Garcia, E.~A. (2009).
+\newblock Learning from imbalanced data.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  21(9):1263--1284.
+
+\bibitem[Jang and Moutinho, 2020]{jang2020determinants}
+Jang, S. and Moutinho, L. (2020).
+\newblock Determinants of guest experience in {Airbnb}: A topic modeling
+  approach using {LDA}.
+\newblock {\em Sustainability}, 12(8):3402.
+
+\bibitem[Jurafsky and Martin, 2023]{jurafsky2023speech}
+Jurafsky, D. and Martin, J.~H. (2023).
+\newblock {\em Speech and Language Processing}.
+\newblock Prentice Hall, 3rd edition.
+
+\bibitem[Kaya et~al., 2024]{kaya2024analysing}
+Kaya, B.~Y., Abubakar, A.~M., and Behravesh, E. (2024).
+\newblock Analysing online reviews of mobile travel applications with sentiment
+  analysis and topic modelling: The example of {Booking} and {Expedia}.
+\newblock {\em Applied Sciences}, 14(24):11800.
+
+\bibitem[Loria, 2020]{loria2020textblob}
+Loria, S. (2020).
+\newblock {TextBlob}: Simplified text processing.
+\newblock \url{https://textblob.readthedocs.io/}.
+\newblock Accessed: 2025.
+
+\bibitem[Luo et~al., 2022]{luo2022visual}
+Luo, Y., Zhou, R., and Liu, J. (2022).
+\newblock Visual recommendation for peer-to-peer accommodation with online
+  reviews based on sentiment analysis and topic models.
+\newblock {\em Frontiers in Psychology}, 13:868096.
+
+\bibitem[Manning et~al., 2008]{manning2008introduction}
+Manning, C.~D., Raghavan, P., and Sch\"{u}tze, H. (2008).
+\newblock {\em Introduction to Information Retrieval}.
+\newblock Cambridge University Press.
+
+\bibitem[Pang et~al., 2002]{pang2002thumbs}
+Pang, B., Lee, L., and Vaithyanathan, S. (2002).
+\newblock Thumbs up? {Sentiment} classification using machine learning
+  techniques.
+\newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
+  Language Processing (EMNLP)}, pages 79--86.
+
+\bibitem[Perez-Sanchez et~al., 2023]{perezsanchez2023sustainable}
+Perez-Sanchez, V.~R., Serrano-Estrada, L., Marti, P., and Mora-Garcia, R.-T.
+  (2023).
+\newblock A sustainable price prediction model for {Airbnb} listings using
+  machine learning and sentiment analysis.
+\newblock {\em Sustainability}, 15(17):13159.
+
+\bibitem[Ramos, 2003]{ramos2003using}
+Ramos, J. (2003).
+\newblock Using {TF-IDF} to determine word relevance in document queries.
+\newblock In {\em Proceedings of the First Instructional Conference on Machine
+  Learning}, volume 242, pages 29--48.
+
+\bibitem[R\"{o}der et~al., 2015]{roder2015exploring}
+R\"{o}der, M., Both, A., and Hinneburg, A. (2015).
+\newblock Exploring the space of topic coherence measures.
+\newblock In {\em Proceedings of the Eighth ACM International Conference on Web
+  Search and Data Mining (WSDM)}, pages 399--408.
+
+\bibitem[Safari, 2025]{safari2025sentiment}
+Safari, A. (2025).
+\newblock Sentiment analysis of {Airbnb} reviews: Exploring their impact on
+  acceptance rates and pricing across multiple {U.S.} regions.
+\newblock {\em arXiv preprint arXiv:2504.14053}.
+
+\bibitem[Santos et~al., 2022]{santos2022expressing}
+Santos, G. E. d.~O., Oliveira, R.~C., and Azevedo, A. (2022).
+\newblock Expressing the experience: An analysis of {Airbnb} customer
+  sentiments.
+\newblock {\em Tourism and Hospitality}, 3(3):42.
+
+\bibitem[Segui-Llinares et~al., 2019]{seguillinares2019monitoring}
+Segui-Llinares, R., Gutierrez-Aaron, A., and Madariaga-Antolinez, R. (2019).
+\newblock Monitoring and mapping illegal short-term rentals: A case study of
+  {Barcelona}.
+\newblock {\em Sustainability}, 11(15):4127.
+
+\bibitem[Sparck~Jones, 1972]{sparckjones1972statistical}
+Sparck~Jones, K. (1972).
+\newblock A statistical interpretation of term specificity and its application
+  in retrieval.
+\newblock {\em Journal of Documentation}, 28(1):11--21.
+
+\end{thebibliography}
